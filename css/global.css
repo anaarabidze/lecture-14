@@ -1,0 +1,371 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  height: 84px;
+}
+header .container {
+  height: 100%;
+  max-width: 1263px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1380px) {
+  header .container {
+    width: 90%;
+  }
+}
+header .container ul {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  header .container ul {
+    display: none;
+  }
+}
+header .container ul li {
+  color: #636060;
+  font-family: Helvetica;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+header .container .icon {
+  display: none;
+}
+@media (max-width: 700px) {
+  header .container .icon {
+    display: flex;
+  }
+}
+
+.s-1 {
+  background-image: url("../images/Rectangle1.png");
+  height: 606px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s-1 div {
+  height: 144px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.s-1 div h1 {
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 79px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 630px) {
+  .s-1 div h1 {
+    font-size: 30px;
+  }
+}
+.s-1 div h2 {
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.s-2 {
+  height: 848px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (max-width: 1313px) {
+  .s-2 {
+    display: block;
+    padding-top: 84px;
+  }
+}
+.s-2 .container {
+  max-width: 1263px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+}
+@media (max-width: 1380px) {
+  .s-2 .container {
+    width: 90%;
+  }
+}
+@media (max-width: 1350px) {
+  .s-2 .container {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1295px) {
+  .s-2 .container .div1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.s-2 .container .div1 .wrapper1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 213px;
+  width: 235px;
+}
+@media (max-width: 1297px) {
+  .s-2 .container .div1 .wrapper1 {
+    display: flex;
+    justify-content: center;
+  }
+}
+.s-2 .container .div1 .wrapper1 p {
+  color: #636060;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.s-2 .container .div1 .wrapper1 div {
+  height: 61px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.s-2 .container .div1 .wrapper1 div h3 {
+  color: #636060;
+  font-family: Helvetica;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.s-2 .container .div1 .wrapper1 div h4 {
+  color: #010101;
+  font-family: Helvetica;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.s-2 .container .wrapper2 {
+  width: 933px;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 1276px) {
+  .s-2 .container .wrapper2 {
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 637px) {
+  .s-2 .container .wrapper2 {
+    justify-content: center;
+  }
+}
+.s-2 .container .wrapper2 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 312px;
+  width: 286px;
+  margin-bottom: 10px;
+}
+@media (max-width: 986px) {
+  .s-2 .container .wrapper2 div {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 670px) {
+  .s-2 .container .wrapper2 div {
+    margin-right: 10px;
+  }
+}
+.s-2 .container .wrapper2 div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 94px;
+}
+.s-2 .container .wrapper2 div div h5 {
+  color: #343232;
+  font-family: Helvetica;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.s-2 .container .wrapper2 div div h6 {
+  color: #636060;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}/*# sourceMappingURL=global.css.map */
