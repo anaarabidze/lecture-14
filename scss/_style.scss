@@ -1,0 +1,135 @@
+header {
+  height: 84px;
+  .container {
+    height: 100%;
+    @include container;
+    @include goflex;
+    ul {
+      width: 500px;
+      @include goflex;
+      @media (max-width: 700px) {
+        display: none;
+      }
+      li {
+        @include li;
+      }
+    }
+    .icon {
+      display: none;
+      @media (max-width: 700px) {
+        display: flex;
+      }
+    }
+  }
+}
+
+.s-1 {
+  background-image: url("../images/Rectangle1.png");
+  height: 606px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div {
+    height: 144px;
+    @include goflex;
+    flex-direction: column;
+    h1 {
+      @include h1;
+      @media (max-width: 630px) {
+        font-size: 30px;
+      }
+    }
+    h2 {
+      @include h2;
+    }
+  }
+}
+
+.s-2 {
+  height: 848px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @media (max-width: 1313px) {
+    display: block;
+    padding-top: 84px;
+  }
+
+  .container {
+    @include container;
+    @include goflex;
+    align-items: flex-start;
+    @media (max-width: 1350px) {
+      flex-wrap: wrap;
+    }
+    .div1 {
+      @media (max-width: 1295px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .wrapper1 {
+        @include column;
+        height: 213px;
+        width: 235px;
+        @media (max-width: 1297px) {
+          display: flex;
+          justify-content: center;
+        }
+        p {
+          @include p;
+        }
+        div {
+          height: 61px;
+          @include column;
+          h3 {
+            @include h3;
+          }
+          h4 {
+            @include h4;
+          }
+        }
+      }
+    }
+
+    .wrapper2 {
+      width: 933px;
+      height: fit-content;
+      @include goflex;
+      flex-wrap: wrap;
+      @media (max-width: 1276px) {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: space-around;
+      }
+      @media (max-width: 637px) {
+        justify-content: center;
+      }
+
+      div {
+        @include column;
+        height: 312px;
+        width: 286px;
+        margin-bottom: 10px;
+        @media (max-width: 986px) {
+          margin-right: 10px;
+        }
+        @media (max-width: 670px) {
+          margin-right: 10px;
+        }
+        div {
+          @include column;
+          height: 94px;
+          h5 {
+            @include h5;
+          }
+          h6 {
+            @include h6;
+          }
+        }
+      }
+    }
+  }
+}
